@@ -25,7 +25,7 @@ output.textContent='Loading'
 
 const fetchFunc = async (location) => {
     try {
-        const response = await fetch(`http://localhost:3000/weather?location=${location}`)
+        const response = await fetch(`/weather?location=${location}`)
         const data = await response.json()
         card.style.backgroundColor='rebeccapurple'
         if (data.error) { 
