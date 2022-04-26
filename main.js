@@ -17,7 +17,7 @@ app.use(express.static(pathDirectory))
 
 app.get('', (req, res) => { 
     res.render('index', {
-        name: 'janakiraman',
+        name: 'Janakiraman',
         age:22
     })
 })
