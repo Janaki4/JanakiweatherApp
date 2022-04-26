@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="shortcut icon" type="image" href="icon.png"> 
+    <link rel="stylesheet" href="/css/main.css">
+    <script defer src="/js/main.js"></script>
+</head>
+<body>
+    <div class="api">
+        <h1 >Weather App</h1>
+        <form class="api_form">
+            <input type="text"  placeholder="Location" name="location" id="data" class="data">
+            <button class="btn">Send</button>
+        </form>
+        <div class="card">
+            <section class="metrics">
+        <p class="degree"></p>
+        <img src=""  class="img">
+            </section>
+        <p class="detail_output"></p>
+        <p class="location_output"></p>
+        </div>
+        {{>footer}}
+    </div>
+</body>
+</html>

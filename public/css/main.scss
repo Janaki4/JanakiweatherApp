@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Mukta+Vaani:wght@300&family=Oswald:wght@300&family=Poppins:wght@200;300&family=Ubuntu:wght@300&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Ms+Madi&family=Mukta+Vaani:wght@300&family=Poppins:wght@200;300&family=Ubuntu:wght@300&family=Work+Sans&display=swap');
+$card-color:rebeccapurple;
+$card-font-family:'Oswald', sans-serif;
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(156, 118, 194);
+}
+
+.api{
+    position: relative;
+    .api_form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40rem;
+        height: 70%;
+        margin: auto;
+        .data{
+            border-radius: 7px;
+            border: 3px;
+            font-size: 1.5rem;
+            padding: 4px 10px;
+            margin: 1rem 10px;
+            &:focus{
+                outline: none;
+            }
+        }
+        .btn{
+            background-color: #6930c3;
+            font-size: 1.52rem;
+            border-radius: 25px;
+            color: rgb(56, 29, 75);
+            padding: 4px 1.35rem 5px 1.35rem;   
+            border: none;
+            transition: all 0.15s ease-in;
+            &:hover{
+                transform :translateY(-5px);
+                color: #ddcaec;
+            }
+        }
+    }
+    h1{
+        text-align: center;
+        font-family: 'Ms Madi', cursive;
+        letter-spacing: 2px;
+        margin: 1rem 0;
+        font-size: 2.65rem;
+    }
+    .footer{
+        font-family: 'Ms Madi', cursive;
+        position: absolute;
+        bottom: -22rem;
+        right:38%;
+        font-size: 2.44rem;
+        margin-bottom: 0;
+    }
+}
+.currLocation{
+    color: $card-color;
+}
+.card{
+    position: absolute;
+    left: 28.33rem;
+    width: 20rem;
+    height: 13.33rem;
+    border-radius: 1rem;
+    padding: 0.51rem;
+    margin: 3rem 0;
+    p{
+        color: beige;
+    }
+    
+    .detail_output,.location_output{
+        font-size: large;
+        color: #ddcaec;
+        font-family: $card-font-family;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: 10px;
+        text-align:center ;
+        padding: 0.65rem 0.455rem;
+        margin-top: 0.85;
+    }
+    .metrics{
+        text-align: center;
+        .degree{
+            display: inline-block;
+            margin-right: 1rem;
+            margin-bottom: 0;
+            font-size: larger;
+            font-weight:bold;
+        }
+    }
+}
